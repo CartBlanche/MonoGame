@@ -458,7 +458,7 @@ jobs:
           path: tests-windowsdx
           
       - name: Download tests-windowsdx12-${{ matrix.platform }}
-        if: runner.os == 'Windows' && runner.environment != 'github-hosted'
+        if: runner.os == 'Windows'
         uses: actions/download-artifact@v8
         with:
           name: tests-windowsdx12-${{ matrix.platform }}
